@@ -3,8 +3,8 @@
 --- (test_server.py -- stdlib only).
 
 from "./ws-c" import { prepare, active_socket, close, curle_again }
-from "../concurrent-epoll/concurrent-epoll" import { run }
-from "../generated/libc-c-linux-x86_64/stdlib" import { system }
+from "concurrent-epoll" import { run }
+from "libc/stdlib" import { system }
 from "bytes" import * as bytes
 
 CURLWS_TEXT := 1

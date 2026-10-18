@@ -22,7 +22,7 @@
 --- "cont" (a continuation piece), "ping", "pong" or "close". `flags`
 --- keeps curl's raw `CURLWS_*` bits for callers that need them.
 
-from "../generated/curl-c-linux-x86_64/curl" import * as curlm
+from "curl/curl" import * as curlm
 
 CONNECT_ONLY_WS := 2
 
