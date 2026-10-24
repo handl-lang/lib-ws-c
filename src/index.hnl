@@ -35,7 +35,7 @@ export curle_again := 81
 --- struct curl_ws_frame on x86_64 (curl's own frame metadata).
 WS_FRAME_DESC := "rec:{age:i32@0:4,flags:i32@4:4,offset:i64@8:8,bytesleft:i64@16:8,len:u64@24:8}"
 
-val_of := (r) ~> tag.untag(r).value
+val_of := (r) ~> r.value
 
 --- first element of a list, or 0 (the adapters hand back out-slot lists)
 head := (xs) ~> match xs {
