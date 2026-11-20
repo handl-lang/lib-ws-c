@@ -2,14 +2,14 @@
 
 WebSocket client for the `concurrent-epoll` scheduler — libcurl transport, RFC 6455 frames.
 
-Part of the `handl-lang` org split (ADR-0128). History is a `git subtree
-split` of the platform monorepo's `ws-c/` (via `c`).
-
 ## Layout
 
 ```text
 src/        the .hnl sources
-pkg.hnl     dependencies, when any: `{ deps: { <name>: "branch:<ref>" } }`
+pkg.hnl     package manifest — modules, deps, description, license
+scripts/hnl-gate.sh   the gate
+scripts/test_server.py   test fixture server
+ci.sh       bupha entry
 ```
 
 ## Gate
