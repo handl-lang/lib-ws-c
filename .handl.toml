@@ -1,7 +1,7 @@
 [dependencies]
 ws = { path = "../lib-ws/src" }
-curl = { path = "../lib-curl/handl-packages/generated/curl-c-linux-x86_64" }
-libc = { path = "../lib-libc/handl-packages/generated/libc-c-linux-x86_64" }
+curl = { path = "../lib-curl/handl-packages/generated/curl/curl-c-linux-x86_64" }
+libc = { path = "../lib-libc/handl-packages/generated/libc/libc-c-linux-x86_64" }
 
 # own package
 ws-c = { path = "src" }
