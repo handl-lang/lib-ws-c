@@ -1,3 +1,36 @@
+# lib-ws-c
+
+WebSocket client for the `concurrent-epoll` scheduler — libcurl
+transport, RFC 6455 frames. Implements the `ws` contract
+(`lib-ws`). Pure `.hnl`.
+
+## Layout
+
+| path | role |
+| --- | --- |
+| `src/index.hnl` | the client implementation |
+| `src/ws-c.test.hnl` | the .hnl test suite |
+| `pkg.hnl` | manifest — `modules: ["ws-c"]`, deps `ws`, `curl`, `libc` |
+| `scripts/hnl-gate.sh` | the gate |
+| `scripts/test_server.py` | test fixture server |
+| `ci.sh` | bupha entry |
+
+## Contract
+
+- libcurl transport + RFC 6455 framing over the `ws` step surface;
+  deps on the `curl`/`libc` codegen bindings.
+
+## Verification
+
+```bash
+HNL=../host-cli/target/debug/hnl scripts/hnl-gate.sh
+./ci.sh
+```
+
+## License
+
+MIT.
+
 <!-- myco:agent-awareness -->
 
 ## Agent awareness
