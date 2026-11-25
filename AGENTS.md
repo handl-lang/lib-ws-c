@@ -13,7 +13,7 @@ transport, RFC 6455 frames. Implements the `ws` contract
 | `pkg.hnl` | manifest — `modules: ["ws-c"]`, deps `ws`, `curl`, `libc` |
 | `scripts/hnl-gate.sh` | the gate |
 | `scripts/test_server.py` | test fixture server |
-| `ci.sh` | bupha entry |
+| `workflows/gate.yaml` | bupha entry (handl-gates) |
 
 ## Contract
 
@@ -24,7 +24,7 @@ transport, RFC 6455 frames. Implements the `ws` contract
 
 ```bash
 HNL=../host-cli/target/debug/hnl scripts/hnl-gate.sh
-./ci.sh
+# bupha entry: workflows/gate.yaml (handl-gates campaign)
 ```
 
 ## License
