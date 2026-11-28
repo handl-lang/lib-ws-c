@@ -2,6 +2,9 @@
 ws = { path = "../lib-ws/src" }
 curl = { path = "../lib-curl/handl-packages/generated/curl/curl-c-linux-x86_64" }
 libc = { path = "../lib-libc/handl-packages/generated/libc/libc-c-linux-x86_64" }
+concurrent-epoll = { path = "../lib-concurrent-epoll/src" }
+concurrent = { path = "../lib-concurrent/src" }
+tls-libssl = { path = "../lib-tls-libssl/src" }
 
 # own package
 ws-c = { path = "src" }
